@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-90464b47.js';
+import { r as registerInstance, h } from './index-0d2e81a1.js';
 
 const buttonCss = ".fr-btn--primary{background-color:#000091;color:#fff;font-size:1rem;line-height:1.5rem;min-height:2.5rem;padding:0.5rem 1.5rem;outline-offset:2px;outline-width:2px}";
 

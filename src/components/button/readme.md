@@ -7,9 +7,9 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `label`  | `label`   |             | `string` | `undefined` |
+| Property        | Attribute         | Description | Type     | Default     |
+| --------------- | ----------------- | ----------- | -------- | ----------- |
+| `ariaLabelText` | `aria-label-text` |             | `string` | `undefined` |
 
 
 ----------------------------------------------
