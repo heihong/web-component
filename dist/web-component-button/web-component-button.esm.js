@@ -1,0 +1,1 @@
+import{p as t,b as a}from"./p-f900caaa.js";(()=>{const a=import.meta.url,f={};return""!==a&&(f.resourcesUrl=new URL(".",a).href),t(f)})().then((t=>a([["p-f4e55f77",[[1,"dsfr-button",{label:[1]}]]],["p-f5b35287",[[1,"my-component",{first:[1],middle:[1],last:[1]}]]]],t)));
