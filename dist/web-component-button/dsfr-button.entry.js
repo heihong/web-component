@@ -1,4 +1,4 @@
-import { r as registerInstance, h } from './index-36bde068.js';
+import { r as registerInstance, h } from './index-90464b47.js';
 
 const buttonCss = ".fr-btn--primary{background-color:#000091;color:#fff;font-size:1rem;line-height:1.5rem;min-height:2.5rem;padding:0.5rem 1.5rem;outline-offset:2px;outline-width:2px}";
 
@@ -7,7 +7,7 @@ const Button = class {
     registerInstance(this, hostRef);
   }
   render() {
-    return (h("button", { type: "button", class: "fr-btn--primary" }, this.label));
+    return (h("button", { type: "button", class: "fr-btn--primary", "aria-label": this.ariaLabelText }, h("slot", null)));
   }
 };
 Button.style = buttonCss;

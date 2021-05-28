@@ -1,4 +1,4 @@
 export declare class Button {
-  label: string;
+  ariaLabelText: string;
   render(): any;
 }

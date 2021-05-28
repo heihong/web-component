@@ -7,7 +7,7 @@
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface DsfrButton {
-        "label": string;
+        "ariaLabelText": string;
     }
     interface MyComponent {
         /**
@@ -44,7 +44,7 @@ declare global {
 }
 declare namespace LocalJSX {
     interface DsfrButton {
-        "label"?: string;
+        "ariaLabelText"?: string;
     }
     interface MyComponent {
         /**
