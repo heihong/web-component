@@ -6,6 +6,9 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
+    interface DsfrButton {
+        "label": string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -22,6 +25,12 @@ export namespace Components {
     }
 }
 declare global {
+    interface HTMLDsfrButtonElement extends Components.DsfrButton, HTMLStencilElement {
+    }
+    var HTMLDsfrButtonElement: {
+        prototype: HTMLDsfrButtonElement;
+        new (): HTMLDsfrButtonElement;
+    };
     interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {
     }
     var HTMLMyComponentElement: {
@@ -29,10 +38,14 @@ declare global {
         new (): HTMLMyComponentElement;
     };
     interface HTMLElementTagNameMap {
+        "dsfr-button": HTMLDsfrButtonElement;
         "my-component": HTMLMyComponentElement;
     }
 }
 declare namespace LocalJSX {
+    interface DsfrButton {
+        "label"?: string;
+    }
     interface MyComponent {
         /**
           * The first name
@@ -48,6 +61,7 @@ declare namespace LocalJSX {
         "middle"?: string;
     }
     interface IntrinsicElements {
+        "dsfr-button": DsfrButton;
         "my-component": MyComponent;
     }
 }
@@ -55,6 +69,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
+            "dsfr-button": LocalJSX.DsfrButton & JSXBase.HTMLAttributes<HTMLDsfrButtonElement>;
             "my-component": LocalJSX.MyComponent & JSXBase.HTMLAttributes<HTMLMyComponentElement>;
         }
     }
